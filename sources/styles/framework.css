@@ -26936,4 +26936,97 @@ body > .navbar {
 .has-text-centered, .container.has-text-centered {
   text-align: center;
 }
+
+@media screen and (max-width: 1023px) {
+  .navbar-menu {
+    background: #343c3d !important;
+    text-align: center;
+  }
+  .navbar {
+    -webkit-box-shadow: 0em 0em 0em 0.05em rgba(10, 10, 10, 0), 0 0px 0 0px rgba(10, 10, 10, 0.02);
+            box-shadow: 0em 0em 0em 0.05em rgba(10, 10, 10, 0), 0 0px 0 0px rgba(10, 10, 10, 0.02);
+  }
+  .navbar .button {
+    width: 80% !important;
+  }
+}
+
+section.main {
+  padding-top: 50px;
+}
+
+.navbar {
+  top: 0;
+  width: 100%;
+  -webkit-box-shadow: 0em 0em 0em 0.05em rgba(10, 10, 10, 0), 0 0px 0 0px rgba(10, 10, 10, 0.02);
+          box-shadow: 0em 0em 0em 0.05em rgba(10, 10, 10, 0), 0 0px 0 0px rgba(10, 10, 10, 0.02);
+}
+
+.navbar-brand #branding {
+  margin: 0px !important;
+  padding: 0px !important;
+}
+
+.navbar-item img {
+  max-height: 4rem;
+}
+
+.proj, .spin {
+  max-height: 100px;
+  border-radius: 100%;
+  -webkit-transition: 0.8s ease;
+  transition: 0.8s ease;
+}
+
+.proj:hover, .spin:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+.logo {
+  border-style: solid;
+  border-color: #800080;
+  border-width: 5px;
+  border-radius: 100%;
+}
+
+.space {
+  padding-top: 25px;
+}
+
+.is-gradient {
+  background: -webkit-gradient(linear, left bottom, left top, from(#800080), to(#2d2dff));
+  background: linear-gradient(360deg, #800080, #2d2dff);
+  background-size: 400% 400%;
+  -webkit-animation: fade 14s ease infinite;
+  animation: fade 14s ease infinite;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    background-position: 0% 4%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 4%;
+  }
+}
+
+@keyframes fade {
+  0% {
+    background-position: 0% 4%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 4%;
+  }
+}
+
+.box:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .progress:not(:last-child), .table:not(:last-child), .table-container:not(:last-child), .title:not(:last-child), .subtitle:not(:last-child), .block:not(:last-child), .highlight:not(:last-child), .breadcrumb:not(:last-child), .level:not(:last-child), .list:not(:last-child), .message:not(:last-child), .pagination:not(:last-child), .tabs:not(:last-child) {
+  margin: 0px;
+}
 /*# sourceMappingURL=framework.css.map */

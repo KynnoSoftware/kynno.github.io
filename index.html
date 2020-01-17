@@ -15,22 +15,30 @@
         <title>Kynno</title>
 
         <link rel="stylesheet" href="./sources/styles/framework.css">
-        <link rel="stylesheet" href="./sources/styles/style.css">
-        <script src="js/navbar.js"></script>
+        <script src="sources/scripts/responsive-nav.js"></script>
         <script src="https://kit.fontawesome.com/bfadb5e813.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <nav class="navbar is-dark">
-            <div class="navbar-brand">
-                <a class="navbar-item" id="branding" href="https://www.kynno.xyz"><img src="sources/images/navlogo.png"></a>
-            </div>
-            <div class="navbar-start">
-                <a class="navbar-item">Staff</a>
-            </div>
-            <div class="navbar-end">
-                <a class="navbar-item" href="https://www.kynno.co.uk/">Business Page</a>
-                <div class="navbar-item">
-                    <a class="button is-primary" href="https://discord.io/kynno"> Join! </a>
+            <div class="container">
+                <div class="navbar-brand">
+                    <a class="navbar-item" id="branding" href="https://www.kynno.xyz"><img src="sources/images/navlogo.png"></a>
+                    <span class="navbar-burger burger mobile-nav" data-target="navMenu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
+                </div>
+                <div id="navMenu" class="navbar-menu">
+                    <div class="navbar-start">
+                        <a href="#staff" class="navbar-item">Staff</a>
+                    </div>
+                    <div class="navbar-end">
+                        <a class="navbar-item" href="https://www.kynno.co.uk/">Business Page</a>
+                        <div class="navbar-item">
+                            <a class="button is-primary" href="https://discord.io/kynno"> Join! </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -38,7 +46,7 @@
         <section class="hero is-gradient">
             <div class="hero-body">
               <div class="container has-text-centered">
-                <img src="sources/images/kynno.png" class="spin" style="max-height: 200px;">
+                <img src="sources/images/kynno.png" class="logo" style="max-height: 200px;">
                 <br>
                 <br>
                 <p class="title" style="font-size:50px;">
@@ -61,7 +69,7 @@
             </div>
             
             <br>
-            <div class="box">
+            <div class="box" id="staff">
                 <h1 class="title is-spaced">Staff</h1>
                 <p>Meet the Staff Team!</p>
                 <div class="is-divider" id="#staff"></div>
@@ -98,7 +106,7 @@
                         </span>
                     </a>
                     <a href="https://twitter.com/Grimmyxx" target="_blank" class="column">
-                        <img src="sources/images/staff/amy.png" class="proj is-manager">
+                        <img src="sources/images/staff/grimmy.png" class="proj is-manager">
                         <br>
                         <p>Grimmy</p>
                         <span class="tag is-manager">
@@ -116,7 +124,7 @@
                     <a href="https://twitter.com/wetwelshman" target="_blank" class="column">
                         <img src="sources/images/staff/pikey.png" class="proj is-manager">
                         <br>
-                        <p>Moosky</p>
+                        <p>Pikeyy</p>
                         <span class="tag is-manager">
                             Manager
                         </span>
@@ -126,20 +134,20 @@
                 <h1 class="title">Administrators</h1>
                 <br>
                 <div class="columns">
-                    <a href="https://twitter.com/TheMooskyFish" target="_blank" class="column">
-                        <img src="sources/images/staff/moosky.jpg" class="proj is-administrator">
+                    <div class="column">
+                        <img src="sources/images/staff/bill.png" class="proj is-administrator">
                         <br>
-                        <p>Moosky</p>
+                        <p>Bill</p>
                         <span class="tag is-administrator">
-                            Manager
+                            Administrator
                         </span>
-                    </a>
+                    </div>
                     <a href="https://twitter.com/Grimmyxx" target="_blank" class="column">
                         <img src="sources/images/staff/amy.png" class="proj is-administrator">
                         <br>
                         <p>Moosky</p>
                         <span class="tag is-administrator">
-                            Manager
+                            Administrator
                         </span>
                     </a>
                     <a href="https://twitter.com/TheManager2003" target="_blank" class="column">
@@ -147,7 +155,15 @@
                         <br>
                         <p>Moosky</p>
                         <span class="tag is-administrator">
-                            Manager
+                            Administrator
+                        </span>
+                    </a>
+                    <a href="https://twitter.com/TheManager2003" target="_blank" class="column">
+                        <img src="sources/images/staff/no1cash.png" class="proj is-administrator">
+                        <br>
+                        <p>Moosky</p>
+                        <span class="tag is-administrator">
+                            Administrator
                         </span>
                     </a>
                 </div>
@@ -155,20 +171,20 @@
                 <h1 class="title">Moderators</h1>
                 <br>
                 <div class="columns">
-                    <a href="https://twitter.com/TheMooskyFish" target="_blank" class="column">
-                        <img src="sources/images/staff/moosky.jpg" class="proj is-moderator">
+                    <div class="column">
+                        <img src="sources/images/staff/anny.png" class="proj is-moderator">
                         <br>
-                        <p>Moosky</p>
+                        <p>Anny</p>
                         <span class="tag is-moderator">
-                            Manager
+                            Moderator
                         </span>
-                    </a>
+                    </div>
                     <a href="https://twitter.com/Grimmyxx" target="_blank" class="column">
-                        <img src="sources/images/staff/amy.png" class="proj is-moderator">
+                        <img src="sources/images/staff/rem.jpg" class="proj is-moderator">
                         <br>
-                        <p>Moosky</p>
+                        <p>Rem</p>
                         <span class="tag is-moderator">
-                            Manager
+                            Moderator
                         </span>
                     </a>
                     <a href="https://twitter.com/TheManager2003" target="_blank" class="column">
@@ -176,7 +192,7 @@
                         <br>
                         <p>Moosky</p>
                         <span class="tag is-moderator">
-                            Manager
+                            Moderator
                         </span>
                     </a>
                 </div>
