@@ -18984,14 +18984,14 @@ a.tag:hover {
 }
 
 .subtitle {
-  color: #4a4a4a;
+  color: #dbdee0;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.25;
 }
 
 .subtitle strong {
-  color: #4a4a4a;
+  color: #dbdee0;
   font-weight: 600;
 }
 
@@ -26877,8 +26877,8 @@ body > .navbar {
   padding: 30px;
 }
 
-.hero, .hero .title, .hero .subtitle {
-  color: white;
+.title {
+  margin-bottom: 0.25rem !important;
 }
 
 .tag.is-owner {
@@ -26933,9 +26933,8 @@ body > .navbar {
   background-color: #800080;
 }
 
-.hero.is-gradient {
-  background: -webkit-gradient(linear, left bottom, left top, from(#800080), to(#2d2dff));
-  background: linear-gradient(360deg, #800080, #2d2dff);
+.hero.is-kynno-gradient {
+  background: linear-gradient(75deg, #800080, #2d2dff);
   background-size: 400% 400%;
   -webkit-animation: fade 14s ease infinite;
   animation: fade 14s ease infinite;
@@ -26965,7 +26964,7 @@ body > .navbar {
   }
 }
 
-.hero.is-gradient .box:not(:last-child), .hero.is-gradient .content:not(:last-child), .hero.is-gradient .notification:not(:last-child), .hero.is-gradient .progress:not(:last-child), .hero.is-gradient .table:not(:last-child), .hero.is-gradient .table-container:not(:last-child), .hero.is-gradient .title:not(:last-child), .hero.is-gradient .subtitle:not(:last-child), .hero.is-gradient .block:not(:last-child), .hero.is-gradient .highlight:not(:last-child), .hero.is-gradient .breadcrumb:not(:last-child), .hero.is-gradient .level:not(:last-child), .hero.is-gradient .list:not(:last-child), .hero.is-gradient .message:not(:last-child), .hero.is-gradient .pagination:not(:last-child), .hero.is-gradient .tabs:not(:last-child) {
+.hero.is-kynno-gradient .box:not(:last-child), .hero.is-kynno-gradient .content:not(:last-child), .hero.is-kynno-gradient .notification:not(:last-child), .hero.is-kynno-gradient .progress:not(:last-child), .hero.is-kynno-gradient .table:not(:last-child), .hero.is-kynno-gradient .table-container:not(:last-child), .hero.is-kynno-gradient .title:not(:last-child), .hero.is-kynno-gradient .subtitle:not(:last-child), .hero.is-kynno-gradient .block:not(:last-child), .hero.is-kynno-gradient .highlight:not(:last-child), .hero.is-kynno-gradient .breadcrumb:not(:last-child), .hero.is-kynno-gradient .level:not(:last-child), .hero.is-kynno-gradient .list:not(:last-child), .hero.is-kynno-gradient .message:not(:last-child), .hero.is-kynno-gradient .pagination:not(:last-child), .hero.is-kynno-gradient .tabs:not(:last-child) {
   margin: 0px;
 }
 

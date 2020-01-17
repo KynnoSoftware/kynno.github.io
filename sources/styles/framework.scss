@@ -32,8 +32,10 @@ $is-moderator: #7574f1;
     padding:30px;
 }
 
-.hero, .hero .title, .hero .subtitle {
-    color: $white;
+.title {
+    
+    margin-bottom: 0.25rem !important;
+
 }
 
 .tag {
@@ -93,8 +95,8 @@ $is-moderator: #7574f1;
         background-color:$primary;
     }
 
-    &.is-gradient {
-        background: linear-gradient(360deg, $primary, $blue);
+    &.is-kynno-gradient {
+        background: linear-gradient(75deg, $primary, $blue);
         background-size: 400% 400%;
     
         -webkit-animation: fade 14s ease infinite;
