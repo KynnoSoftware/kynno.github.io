@@ -7,12 +7,15 @@
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Your hub for all things Kynno!">
-        <meta name="keywords" content="kynno, Kynno, kynnogroup, KynnoGroup, Samuel, samuel">
+        <meta name="keywords" content="kynno, Kynno, kynnogroup, KynnoGroup, Samuel, samuel, Community, Technology, community, technology">
         <meta name="theme-color" content="#FF0033">
-        <link rel="shortcut icon" href="Sources/Images/favicon.ico">
+
+        <meta property="og:image" content="sources/images/kynno.png">
+
+        <link rel="shortcut icon" href="sources/images/favicon.ico">
 
         <!--Title and Embeds-->
-        <title>Kynno</title>
+        <title>Kynno Community</title>
 
         <link rel="stylesheet" href="./sources/styles/framework.css">
         <script src="sources/scripts/responsive-nav.js"></script>
@@ -31,7 +34,26 @@
                 </div>
                 <div id="navMenu" class="navbar-menu">
                     <div class="navbar-start">
-                        <a href="#staff" class="navbar-item">Staff</a>
+                        <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link">
+                                Staff
+                            </a>
+
+                            <div class="navbar-dropdown">
+                                <a href="#owners" class="navbar-item">
+                                    Owners
+                                </a>
+                                <a href="#managers" class="navbar-item">
+                                    Managers
+                                </a>
+                                <a href="#administrators" class="navbar-item">
+                                    Administrators
+                                </a>
+                                <a href="#moderators" class="navbar-item">
+                                    Moderators
+                                </a>
+                            </div>
+                        </div>
                     </div>
                     <div class="navbar-end">
                         <a class="navbar-item" href="https://www.kynno.co.uk/">Business Page</a>
@@ -46,7 +68,7 @@
         <section class="hero is-gradient">
             <div class="hero-body">
               <div class="container has-text-centered">
-                <img src="sources/images/kynno.png" class="logo" style="max-height: 200px;">
+                <img src="sources/images/kynno.png" class="logo spin" style="max-height: 200px;">
                 <br>
                 <br>
                 <p class="title" style="font-size:50px;">
@@ -67,17 +89,16 @@
                 <br>
                 <p>Are you tired of the other servers with drama? Or perhaps the servers with abusive staff? No more! At Kynno, our staff are well-trained to handle all drama to provide a great experience for all users!</p>
             </div>
-            
-            <br>
+
             <div class="box" id="staff">
                 <h1 class="title is-spaced">Staff</h1>
                 <p>Meet the Staff Team!</p>
-                <div class="is-divider" id="#staff"></div>
+                <div class="is-divider" id="owners"></div>
                 <h1 class="title">Owners</h1>
                 <br>
                 <div class="columns">
                     <a href="https://twitter.com/samuelkynno" target="_blank" class="column">
-                        <img src="sources/images/staff/samuel.png" class="proj is-owner">
+                        <img src="sources/images/staff/samuel.png" class="staff is-owner">
                         <br>
                         <p>Samuel Kynno</p>
                         <span class="tag is-owner">
@@ -85,7 +106,7 @@
                         </span>
                     </a>
                     <a href="https://twitter.com/SqueezyTheOrca" target="_blank" class="column">
-                        <img src="sources/images/staff/squeezy.gif" class="proj is-owner">
+                        <img src="sources/images/staff/squeezy.gif" class="staff is-owner">
                         <br>
                         <p>Squeezy</p>
                         <span class="tag is-owner">
@@ -93,86 +114,78 @@
                         </span>
                     </a>
                 </div>
-                <div class="is-divider" id="#staff"></div>
+                <div class="is-divider" id="managers"></div>
                 <h1 class="title">Managers</h1>
                 <br>
                 <div class="columns">
-                    <a href="https://twitter.com/TheMooskyFish" target="_blank" class="column">
-                        <img src="sources/images/staff/moosky.jpg" class="proj is-manager">
-                        <br>
-                        <p>Moosky</p>
-                        <span class="tag is-manager">
-                            Manager
-                        </span>
-                    </a>
                     <a href="https://twitter.com/Grimmyxx" target="_blank" class="column">
-                        <img src="sources/images/staff/grimmy.png" class="proj is-manager">
+                        <img src="sources/images/staff/grimmy.png" class="staff is-manager">
                         <br>
                         <p>Grimmy</p>
                         <span class="tag is-manager">
                             Manager
                         </span>
                     </a>
-                    <a href="https://twitter.com/TheManager2003" target="_blank" class="column">
-                        <img src="sources/images/staff/no1cash.png" class="proj is-manager">
+                    <a href="https://twitter.com/TheMooskyFish" target="_blank" class="column">
+                        <img src="sources/images/staff/moosky.jpg" class="staff is-manager">
                         <br>
-                        <p>Ram</p>
+                        <p>Moosky</p>
                         <span class="tag is-manager">
                             Manager
                         </span>
                     </a>
                     <a href="https://twitter.com/wetwelshman" target="_blank" class="column">
-                        <img src="sources/images/staff/pikey.png" class="proj is-manager">
+                        <img src="sources/images/staff/pikey.png" class="staff is-manager">
                         <br>
                         <p>Pikeyy</p>
                         <span class="tag is-manager">
                             Manager
                         </span>
                     </a>
+                    <a href="https://twitter.com/TheManager2003" target="_blank" class="column">
+                        <img src="sources/images/staff/no1cash.png" class="staff is-manager">
+                        <br>
+                        <p>Ram</p>
+                        <span class="tag is-manager">
+                            Manager
+                        </span>
+                    </a>
                 </div>
-                <div class="is-divider" id="#staff"></div>
+                <div class="is-divider" id="administrators"></div>
                 <h1 class="title">Administrators</h1>
                 <br>
                 <div class="columns">
                     <div class="column">
-                        <img src="sources/images/staff/bill.png" class="proj is-administrator">
+                        <img src="sources/images/staff/bill.png" class="staff is-administrator">
                         <br>
                         <p>Bill</p>
                         <span class="tag is-administrator">
                             Administrator
                         </span>
                     </div>
-                    <a href="https://twitter.com/Grimmyxx" target="_blank" class="column">
-                        <img src="sources/images/staff/amy.png" class="proj is-administrator">
+                    <a href="https://twitter.com/TheManager2003" target="_blank" class="column">
+                        <img src="sources/images/staff/felix.png" class="staff is-administrator">
                         <br>
-                        <p>Moosky</p>
+                        <p>FelixSmith17</p>
                         <span class="tag is-administrator">
                             Administrator
                         </span>
                     </a>
-                    <a href="https://twitter.com/TheManager2003" target="_blank" class="column">
-                        <img src="sources/images/staff/no1cash.png" class="proj is-administrator">
+                    <a href="https://www.youtube.com/channel/UCu50D4_Ajl6R4V4tkNvJUtQ" target="_blank" class="column">
+                        <img src="sources/images/staff/juicy.png" class="staff is-administrator">
                         <br>
-                        <p>Moosky</p>
-                        <span class="tag is-administrator">
-                            Administrator
-                        </span>
-                    </a>
-                    <a href="https://twitter.com/TheManager2003" target="_blank" class="column">
-                        <img src="sources/images/staff/no1cash.png" class="proj is-administrator">
-                        <br>
-                        <p>Moosky</p>
+                        <p>Juicy</p>
                         <span class="tag is-administrator">
                             Administrator
                         </span>
                     </a>
                 </div>
-                <div class="is-divider" id="#staff"></div>
+                <div class="is-divider" id="moderators"></div>
                 <h1 class="title">Moderators</h1>
                 <br>
                 <div class="columns">
                     <div class="column">
-                        <img src="sources/images/staff/anny.png" class="proj is-moderator">
+                        <img src="sources/images/staff/anny.png" class="staff is-moderator">
                         <br>
                         <p>Anny</p>
                         <span class="tag is-moderator">
@@ -180,17 +193,9 @@
                         </span>
                     </div>
                     <a href="https://twitter.com/Grimmyxx" target="_blank" class="column">
-                        <img src="sources/images/staff/rem.jpg" class="proj is-moderator">
+                        <img src="sources/images/staff/rem.jpg" class="staff is-moderator">
                         <br>
                         <p>Rem</p>
-                        <span class="tag is-moderator">
-                            Moderator
-                        </span>
-                    </a>
-                    <a href="https://twitter.com/TheManager2003" target="_blank" class="column">
-                        <img src="sources/images/staff/no1cash.png" class="proj is-moderator">
-                        <br>
-                        <p>Moosky</p>
                         <span class="tag is-moderator">
                             Moderator
                         </span>
@@ -198,8 +203,6 @@
                 </div>
             </div>
         </div>
-            <br>
-            <br>
         </section>
         <footer class="footer has-text-white has-text-centered">
             <div class="container">
