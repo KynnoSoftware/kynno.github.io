@@ -5,12 +5,6 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
-
-$gray-dark:#535353;
-$beige-light:#D0D1CD;
-$beige-lighter:#EFF0EB;
-$white: #EEE;
-
 $primary: #800080;
 $secondary: #2d2dff;
 $lblue: #5272ff;
@@ -20,30 +14,22 @@ $is-manager: #9402a6;
 $is-administrator: #6ee043;
 $is-moderator: #7574f1;
 
-$family-sans-serif: "Roboto", sans-serif;
-$grey-dark: $gray-dark;
-$grey-light: $beige-light;
-$footer-background-color: $primary;
-$link: $lblue;
-$widescreen-enabled: true;
-$footer-color: true;
-$fullhd-enabled: true;
-
-
-$body-background-color: $beige-lighter;
-$control-border-width: 2px;
-$input-border-color: transparent;
-$input-shadow: none;
-
 @import '../../node_modules/bulma/bulma.sass';
 @import '../../node_modules/bulma-divider/src/sass/index.sass';
 @import "../../node_modules/bulma-pageloader/src/sass/index.sass";
 @import "../../node_modules/bulma-steps/src/sass/index.sass";
 @import "../../node_modules/bulma-badge/src/sass/index.sass";
 @import "../../node_modules/bulma-pricingtable/src/sass/index.sass";
+@import "../../node_modules/darkly/bulmaswatch.scss";
 
-.navbar {
-    background-color: white !important;
+.container.body {
+    box-shadow: 0px 0px 16px rgba(10, 10, 10, 0.2);
+
+    text-align:center;
+
+    max-width:90%;
+
+    padding:30px;
 }
 
 .hero, .hero .title, .hero .subtitle {
@@ -52,19 +38,19 @@ $input-shadow: none;
 
 .tag.is-owner {
     background-color: $is-owner;
-    color:$beige-lighter;
+    color:$white;
 }
 .tag.is-manager {
     background-color: $is-manager;
-    color:$beige-lighter;
+    color:$white;
 }
 .tag.is-administrator {
     background-color: $is-administrator;
-    color:$beige-lighter;
+    color:$white;
 }
 .tag.is-moderator {
     background-color: $is-moderator;
-    color:$beige-lighter;
+    color:$white;
 }
 
 .proj.is-owner {
