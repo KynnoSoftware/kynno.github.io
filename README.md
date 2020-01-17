@@ -1,4 +1,2 @@
 # kynno.xyz
-
-# What is 'kynno.xyz'?
-Kynno.xyz is our community website. We use it for advertisements.
+[**Kynno.xyz**](https://kynno.xyz) is our official website for our community, Kynno Community!
