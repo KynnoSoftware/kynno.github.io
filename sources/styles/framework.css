@@ -26986,6 +26986,21 @@ body > .navbar {
   }
 }
 
+@media screen and (max-width: 1366px) {
+  .is-hidden-mobile {
+    display: block !important;
+  }
+}
+
+@media screen and (max-width: 1365px) {
+  .is-hidden-mobile {
+    display: none !important;
+  }
+  .column {
+    width: 90% !important;
+  }
+}
+
 section.main {
   padding-top: 25px;
   padding-bottom: 25px;
@@ -27043,5 +27058,18 @@ section.main {
 .logo.spin:hover {
   -webkit-transform: rotate(360deg);
           transform: rotate(360deg);
+}
+
+.box.is-post .columns .date {
+  text-align: right;
+}
+
+.box.is-post .columns .title {
+  text-align: left;
+}
+
+.box.is-post .subtitle {
+  margin-top: 25px;
+  font-size: 16px;
 }
 /*# sourceMappingURL=framework.css.map */

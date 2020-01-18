@@ -135,6 +135,20 @@ $is-moderator: #7574f1;
         width:80% !important;
     }
 }
+@media screen and (max-width:1366px) {
+    .is-hidden-mobile {
+        display:block !important;
+    }
+}
+@media screen and (max-width:1365px) {
+    .is-hidden-mobile {
+        display:none !important;
+    }
+
+    .column {
+        width:90% !important;
+    }
+}
 
 section.main {
     padding-top:25px;
@@ -191,5 +205,29 @@ section.main {
 
     &.spin:hover {
         transform:rotate(360deg);
+    }
+}
+
+.box {
+    &.is-post {
+        .columns {
+            .date {
+                text-align:right;
+            }
+    
+            .title {
+                text-align:left;
+            }
+
+            .desc {
+
+            }
+        }
+
+        
+        .subtitle {
+            margin-top:25px;
+            font-size:16px;
+        }
     }
 }

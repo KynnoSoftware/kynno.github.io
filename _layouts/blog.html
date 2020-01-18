@@ -1,0 +1,38 @@
+<html>
+    <head>
+        {% include head.html %}
+
+        <title>Kynno Community - Blog</title>
+    </head>
+
+    <body class="{% if page.wide == 'ish' %}wide-ish{% elsif page.wide %}wide{% endif %} {% if page.url == '/' %}is-home{% endif %}">
+      {% include hero.html %}  
+
+      <br>
+            
+          <div class="container box">
+            {% if page.permalink != '/' %}
+              <aside id="meta">    
+
+                {% endif %}
+      
+                {% if page.image and page.layout == 'post' %}
+                {% include post_img_folder.html %}
+                <img id="image" src="/img/posts/{{ post_img_folder }}/{{page.image}}">
+                </img>
+                {% endif %}
+      
+                <h1 id="title" style="font-size:32px;"><b>{{ page.title }}</b></h1>
+                {% if page.description %}
+                  <h3>{{ page.description }}</h3>
+                {% endif %}
+              </aside>
+            {{ content }}
+          </div>
+
+        </main>
+      
+        {% include footer.html %}
+      </body>
+      
+</html>

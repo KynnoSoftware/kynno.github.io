@@ -1,0 +1,27 @@
+---
+permalink: /blog/
+layout: blog
+---
+
+{% for page in site.posts %}
+    <div class="container">
+        <div class="box is-post">
+            <div class="columns">
+                <h3 class="column title"><a href="{{ page.url }}">{{ page.title }}</a></h3>
+
+                <h4 class="column date">
+                    {{ page.date | date_to_long_string: 'ordinal' }}
+                </h4>
+
+            </div>
+
+            {% if page.description %}
+                <h3>{{ page.description }}</h3>
+            {% endif %}
+
+            <p class="subtitle">
+                Written by <b>{{ page.author }}</b>
+            </p>
+        </div>
+    </div>
+{% endfor %}
