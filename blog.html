@@ -1,41 +1,27 @@
 ---
-layout: compress
+permalink: /blog/
 ---
-<html>
-    <head>
-        {% include head.html %}
+<div class="is-divider"></div>
+{% for page in site.posts %}
+    <div class="container">
+        <div class="box is-post">
+            <div class="columns">
+                <h3 class="column title"><a href="{{ page.url }}">{{ page.title }}</a></h3>
 
-        <title>Kynno Community - Blog</title>
-    </head>
+                <h4 class="column date">
+                    {{ page.date | date_to_long_string: 'ordinal' }}
+                </h4>
 
-    <body class="{% if page.wide == 'ish' %}wide-ish{% elsif page.wide %}wide{% endif %} {% if page.url == '/' %}is-home{% endif %}">
-      {% include hero.html %}  
+            </div>
 
-      <br>
-            
-          <div class="container box">
-            {% if page.permalink != '/' %}
-              <aside id="meta">    
+            {% if page.description %}
+                <h3>{{ page.description }}</h3>
+            {% endif %}
 
-                {% endif %}
-      
-                {% if page.image and page.layout == 'post' %}
-                {% include post_img_folder.html %}
-                <img id="image" src="/img/posts/{{ post_img_folder }}/{{page.image}}">
-                </img>
-                {% endif %}
-      
-                <h1 id="title" style="font-size:32px;"><b>{{ page.title }}</b></h1>
-                {% if page.description %}
-                  <h3>{{ page.description }}</h3>
-                {% endif %}
-              </aside>
-            {{ content }}
-          </div>
-
-        </main>
-      
-        {% include footer.html %}
-      </body>
-      
-</html>
+            <p class="subtitle">
+                Written by <b>{{ page.author }}</b>
+            </p>
+        </div>
+        <div class="is-divider"></div>
+    </div>
+{% endfor %}
