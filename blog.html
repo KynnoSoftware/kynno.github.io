@@ -1,28 +1,46 @@
----
-permalink: /blog/
-layout: blog
----
-<div class="is-divider"></div>
-{% for page in site.posts %}
-    <div class="container">
-        <div class="box is-post">
-            <div class="columns">
-                <h3 class="column title"><a href="{{ page.url }}">{{ page.title }}</a></h3>
+<html>
+    <head>
+        {% include head.html %}
 
-                <h4 class="column date">
-                    {{ page.date | date_to_long_string: 'ordinal' }}
-                </h4>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="{{page.description}}">
+        <meta name="name" content="{{page.author}}">
+        <meta name="keywords" content="kynno, Kynno, kynnogroup, KynnoGroup, Samuel, samuel, Community, Technology, community, technology">
+        <meta name="theme-color" content="#FF0033">
 
-            </div>
+        <meta property="og:image" content="./sources/images/kynno.png">
 
-            {% if page.description %}
-                <h3>{{ page.description }}</h3>
-            {% endif %}
+        <title>{{ page.title }}</title>
+    </head>
 
-            <p class="subtitle">
-                Written by <b>{{ page.author }}</b>
-            </p>
-        </div>
-        <div class="is-divider"></div>
-    </div>
-{% endfor %}
+    <body class="{% if page.wide == 'ish' %}wide-ish{% elsif page.wide %}wide{% endif %} {% if page.url == '/' %}is-home{% endif %}">
+      {% include hero.html %}  
+
+      <br>
+            
+          <div class="container box">
+            {% if page.permalink != '/' %}
+              <aside id="meta">    
+
+                {% endif %}
+      
+                {% if page.image and page.layout == 'post' %}
+                {% include post_img_folder.html %}
+                <img id="image" src="/img/posts/{{ post_img_folder }}/{{page.image}}">
+                </img>
+                {% endif %}
+      
+                <h1 id="title" style="font-size:32px;"><b>{{ page.title }}</b></h1>
+                {% if page.description %}
+                  <h3>{{ page.description }}</h3>
+                {% endif %}
+              </aside>
+            {{ content }}
+          </div>
+
+        </main>
+      
+        {% include footer.html %}
+      </body>
+      
+</html>
