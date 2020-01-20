@@ -20,6 +20,7 @@ $is-moderator: #7574f1;
 @import "../../node_modules/bulma-steps/src/sass/index.sass";
 @import "../../node_modules/bulma-badge/src/sass/index.sass";
 @import "../../node_modules/bulma-pricingtable/src/sass/index.sass";
+
 @import "../../node_modules/darkly/bulmaswatch.scss";
 
 .container.body {
@@ -86,6 +87,15 @@ $is-moderator: #7574f1;
 }
 
 .hero {
+
+    .hero-body {
+        .container.has-text-centered, .container {
+            .title, .subtitle {
+                color:$text !important;
+            }
+        }
+    }
+
     &.is-kynno {
         background-color:$primary;
     }
@@ -123,7 +133,6 @@ $is-moderator: #7574f1;
 
 @media screen and (max-width:1023px) {
     .navbar-menu {
-        background:$grey-dark !important;
         text-align: center;
     }
     .navbar {
@@ -158,10 +167,20 @@ section.main {
 .navbar {
     top:0;
     width:100%;
+    background:$background !important;
+
+    .navbar-item, .navbar-link {
+        color:$text !important;
+    }
+
     box-shadow:
         0em 0em 0em 0.05em rgba(10, 10, 10, 0), 
         0 0px 0 0px rgba(10, 10, 10, 0.02);
 
+    .navbar-menu {
+        background:$background !important;
+    }
+    
     &.is-fixed {
         top:0;
         position:fixed;
@@ -178,7 +197,7 @@ section.main {
 
     .navbar-item.has-dropdown {
         .navbar-dropdown {
-            background-color: $grey-dark !important;
+            background-color: $background !important;
         }
     }
 }
@@ -235,5 +254,12 @@ section.main {
         .list-item {
             color: $text !important;
         }
+    }
+}
+
+.pageloader {
+    &.is-kynno-gradient {
+        background: linear-gradient(75deg, $primary, $blue) !important;
+        background-size: 400% 400%;
     }
 }

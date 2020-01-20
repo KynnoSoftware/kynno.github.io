@@ -1,4 +1,4 @@
-<nav class="navbar is-dark">
+<nav class="navbar is-dark is-fixed-top">
     <div class="container">
         <div class="navbar-brand">
             <a class="navbar-item" id="branding" href="https://www.kynno.xyz"><img src="https://kynno.xyz/sources/images/navlogo.png"></a>
@@ -10,14 +10,34 @@
         </div>
         <div id="navMenu" class="navbar-menu">
             <div class="navbar-start">
-                <a href="../index.html" class="navbar-item">
-                    Home
+                <a href="/" class="navbar-item">
+                    <i class="fas fa-home" style="margin-right:7px;"></i>Home
                 </a>
-                <a href="../blog/" class="navbar-item">
-                    Community Blog
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link" href="./staff">
+                        <i class="fas fa-users-cog" style="margin-right:7px;"></i> Staff
+                    </a>
+
+                    <div class="navbar-dropdown">
+                        <a href="./staff#owners" class="navbar-item">
+                            <i class="fas fa-suitcase" style="margin-right:7px;"></i> Owners
+                        </a>
+                        <a href="./staff#managers" class="navbar-item">
+                            <i class="fas fa-suitcase" style="margin-right:7px;"></i> Managers
+                        </a>
+                        <a href="./staff#administrators" class="navbar-item">
+                            <i class="fas fa-hammer" style="margin-right:7px;"></i> Administrators
+                        </a>
+                        <a href="./staff#moderators" class="navbar-item">
+                            <i class="fas fa-wrench" style="margin-right:7px;"></i> Moderators
+                        </a>
+                    </div>
+                </div>
+                <a href="/blog/" class="navbar-item">
+                    <i class="fas fa-blog" style="margin-right:7px;"></i> Community Blog
                 </a>
                 <a href="https://mc.kynno.xyz" class="navbar-item" target="_blank">
-                    Minecraft
+                    <i class="fas fa-box" style="margin-right:7px;"></i> Minecraft
                 </a>
             </div>
             <div class="navbar-end">

@@ -1,0 +1,23 @@
+{
+  "name": "kynno",
+  "version": "1.0.0",
+  "description": "The Official Kynno Group Website.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Samuel R. Kynaston",
+  "license": "ISC",
+  "devDependencies": {
+    "bulma": "^0.8.0"
+  },
+  "dependencies": {
+    "bulma-badge": "^3.0.1",
+    "bulma-divider": "^0.2.0",
+    "bulma-extensions": "^6.2.7",
+    "bulma-pageloader": "^0.3.0",
+    "bulma-pricingtable": "^0.2.0",
+    "bulma-steps": "^2.2.1",
+    "bulmaswatch": "^0.7.5"
+  }
+}

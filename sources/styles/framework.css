@@ -12399,7 +12399,7 @@ label.panel-block:hover {
   color: #fff;
 }
 
-.pageloader:not(.is-bottom-to-top) {
+.pageloader:not(.fade) {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
@@ -26929,6 +26929,10 @@ body > .navbar {
   margin-top: .5rem;
 }
 
+.hero .hero-body .container.has-text-centered .title, .hero .hero-body .container.has-text-centered .subtitle, .hero .hero-body .container .title, .hero .hero-body .container .subtitle {
+  color: #fff !important;
+}
+
 .hero.is-kynno {
   background-color: #800080;
 }
@@ -26974,7 +26978,6 @@ body > .navbar {
 
 @media screen and (max-width: 1023px) {
   .navbar-menu {
-    background: #343c3d !important;
     text-align: center;
   }
   .navbar {
@@ -27009,8 +27012,17 @@ section.main {
 .navbar {
   top: 0;
   width: 100%;
+  background: #282f2f !important;
   -webkit-box-shadow: 0em 0em 0em 0.05em rgba(10, 10, 10, 0), 0 0px 0 0px rgba(10, 10, 10, 0.02);
           box-shadow: 0em 0em 0em 0.05em rgba(10, 10, 10, 0), 0 0px 0 0px rgba(10, 10, 10, 0.02);
+}
+
+.navbar .navbar-item, .navbar .navbar-link {
+  color: #fff !important;
+}
+
+.navbar .navbar-menu {
+  background: #282f2f !important;
 }
 
 .navbar.is-fixed {
@@ -27028,7 +27040,7 @@ section.main {
 }
 
 .navbar .navbar-item.has-dropdown .navbar-dropdown {
-  background-color: #343c3d !important;
+  background-color: #282f2f !important;
 }
 
 .staff, .spin {
@@ -27079,5 +27091,10 @@ section.main {
 
 .list.is-dark .list-item {
   color: #fff !important;
+}
+
+.pageloader.is-kynno-gradient {
+  background: linear-gradient(75deg, #800080, #2d2dff) !important;
+  background-size: 400% 400%;
 }
 /*# sourceMappingURL=framework.css.map */
