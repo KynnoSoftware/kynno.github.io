@@ -1,0 +1,18 @@
+<div class="dashboard-panel is-full-height is-side">
+    <p class="title">
+      Blog Posts
+    </p>
+
+    {% for page in site.posts %}
+        <div class="box">
+            <a class="title" href="{{ page.url }}">{{ page.title }}</a>
+            <br>
+            <br>
+            {% if page.description %}
+                <h3>{{ page.description }}</h3>
+            {% endif %}
+            <br>
+            <p class="subtitle">Written by {{ page.author }}.</p>
+        </div>
+    {% endfor %}
+</div>

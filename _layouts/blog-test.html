@@ -1,0 +1,22 @@
+---
+layout: compress
+---
+<html>
+    <head>
+        {% include head.html %}
+
+        <title>Kynno Community</title>
+    </head>
+
+    <body class="{% if page.wide == 'ish' %}wide-ish{% elsif page.wide %}wide{% endif %} {% if page.url == '/' %}is-home{% endif %}">
+        
+        <div class="dashboard-main is-scrollable">
+            <section class="section">
+              <p class="title">
+                {{ page.title }}
+              </p>
+            </section>
+        </div>
+      </body>
+      
+</html>
