@@ -1,3 +1,5 @@
 window.onload = (event) => {
-    $('.pageloader').removeClass('is-active');
+    var interval = window.setInterval(function() {
+        $('.pageloader').removeClass('is-active');
+    }, 500)
 };

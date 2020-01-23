@@ -6,8 +6,7 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa&display=swap');
 
 $primary: #800080;
-$secondary: #2d2dff;
-$lblue: #5272ff;
+$lblue: #2d2dff;
 
 $is-owner: #8d025e;
 $is-manager: #9402a6;
@@ -22,6 +21,8 @@ $is-moderator: #7574f1;
 @import "../../node_modules/bulma-pricingtable/src/sass/index.sass";
 
 @import "../../node_modules/darkly/bulmaswatch.scss";
+
+@import "../../node_modules/bulma-dashboard/src/bulma-dashboard.sass";
 
 .container.body {
     box-shadow: 0px 0px 16px rgba(10, 10, 10, 0.2);
@@ -84,47 +85,6 @@ $is-moderator: #7574f1;
 
 .column .tag {
     margin-top: .5rem;
-}
-
-.hero {
-
-    .hero-body {
-        .container.has-text-centered, .container {
-            .title, .subtitle {
-                color:$text !important;
-            }
-        }
-    }
-
-    &.is-kynno {
-        background-color:$primary;
-    }
-
-    &.is-kynno-gradient {
-        background: linear-gradient(75deg, $primary, $blue);
-        background-size: 400% 400%;
-    
-        -webkit-animation: fade 14s ease infinite;
-        -moz-animation: fade 14s ease infinite;
-        -o-animation: fade 14s ease infinite;
-        animation: fade 14s ease infinite;
-    
-        @-webkit-keyframes fade {
-            0%{background-position:0% 4%}
-            50%{background-position:100% 100%}
-            100%{background-position:0% 4%}
-        }
-
-        @keyframes fade { 
-            0%{background-position:0% 4%}
-            50%{background-position:100% 100%}
-            100%{background-position:0% 4%}
-        }
-
-        .box:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .progress:not(:last-child), .table:not(:last-child), .table-container:not(:last-child), .title:not(:last-child), .subtitle:not(:last-child), .block:not(:last-child), .highlight:not(:last-child), .breadcrumb:not(:last-child), .level:not(:last-child), .list:not(:last-child), .message:not(:last-child), .pagination:not(:last-child), .tabs:not(:last-child) {
-            margin:0px;
-        }
-    }
 }
 
 .has-text-centered, .container.has-text-centered {
@@ -261,5 +221,105 @@ section.main {
     &.is-kynno-gradient {
         background: linear-gradient(75deg, $primary, $blue) !important;
         background-size: 400% 400%;
+    }
+}
+
+html.has-navbar-fixed-top, body.has-navbar-fixed-top {
+    padding-top:3.77rem;
+}
+
+.dashboard-panel {
+    &.is-side {
+        background-color: lighten($background, 5);
+    }
+
+    &.is-full-height {
+        height:100vh;
+    }
+}
+
+.container {
+    &.is-post {
+        .columns {
+            .date {
+                text-align:right;
+            }
+    
+            .title {
+                text-align:left;
+            }
+        }
+
+        
+        .subtitle {
+            margin-top:30px;
+            font-size:16px;
+        }
+    }
+}
+
+.columns {
+    .column {
+        &.text-white {
+            color:#fff !important;
+        }
+    }
+}
+
+.button {
+    &.is-blue {
+
+        background-color: $lblue;
+        border-color: $lblue;
+
+        &:hover {
+            background-color: lighten($lblue,5);
+            border-color: lighten($lblue,5);
+        }
+    }
+}
+
+.hero {
+
+    .hero-body {
+        .container.has-text-centered, .container {
+            .title, .subtitle {
+                color:$text !important;
+            }
+        }
+    }
+
+    &.is-hoverable {
+        
+    }
+
+    &.is-kynno {
+        background-color:$primary;
+    }
+
+    &.is-kynno-gradient {
+        background: linear-gradient(75deg, $primary, $lblue);
+        background-size: 400% 400%;
+    
+        -webkit-animation: fade 14s ease infinite;
+        -moz-animation: fade 14s ease infinite;
+        -o-animation: fade 14s ease infinite;
+        animation: fade 14s ease infinite;
+    
+        @-webkit-keyframes fade {
+            0%{background-position:0% 4%}
+            50%{background-position:100% 100%}
+            100%{background-position:0% 4%}
+        }
+
+        @keyframes fade { 
+            0%{background-position:0% 4%}
+            50%{background-position:100% 100%}
+            100%{background-position:0% 4%}
+        }
+
+        .box:not(:last-child), .content:not(:last-child), .notification:not(:last-child), .progress:not(:last-child), .table:not(:last-child), .table-container:not(:last-child), .title:not(:last-child), .subtitle:not(:last-child), .block:not(:last-child), .highlight:not(:last-child), .breadcrumb:not(:last-child), .level:not(:last-child), .list:not(:last-child), .message:not(:last-child), .pagination:not(:last-child), .tabs:not(:last-child) {
+            margin:0px;
+        }
     }
 }

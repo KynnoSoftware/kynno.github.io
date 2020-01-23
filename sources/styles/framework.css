@@ -12399,7 +12399,7 @@ label.panel-block:hover {
   color: #fff;
 }
 
-.pageloader:not(.fade) {
+.pageloader:not(.is-bottom-to-top) {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
@@ -18984,14 +18984,14 @@ a.tag:hover {
 }
 
 .subtitle {
-  color: #dbdee0;
+  color: #8c9b9d;
   font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.25;
 }
 
 .subtitle strong {
-  color: #dbdee0;
+  color: #8c9b9d;
   font-weight: 600;
 }
 
@@ -26869,6 +26869,141 @@ body > .navbar {
   background-color: transparent;
 }
 
+.is-scrollable {
+  overflow-y: auto;
+}
+
+.dashboard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.dashboard.is-full-height {
+  height: 100vh;
+}
+
+.dashboard-panel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2rem 1.5rem;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25rem;
+          flex: 0 0 25rem;
+  height: 100%;
+}
+
+.dashboard-panel.left {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25rem;
+          flex: 0 0 25rem;
+}
+
+.dashboard-panel.right {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25rem;
+          flex: 0 0 25rem;
+}
+
+.dashboard-panel.has-thick-padding {
+  padding: 3rem 2rem;
+}
+
+.dashboard-panel.is-one-quarter {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+.dashboard-panel.is-half {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+
+.dashboard-panel.is-one-third {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 33.33333%;
+          flex: 0 0 33.33333%;
+}
+
+.dashboard-panel.is-small {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 15rem;
+          flex: 0 0 15rem;
+}
+
+.dashboard-panel.is-medium {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 20rem;
+          flex: 0 0 20rem;
+}
+
+.dashboard-panel.is-large {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30rem;
+          flex: 0 0 30rem;
+}
+
+.dashboard-panel-header.is-centered, .dashboard-panel-content.is-centered, .dashboard-panel-footer.is-centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.dashboard-panel-header {
+  margin-bottom: 2rem;
+}
+
+.dashboard-panel-main {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.dashboard-panel-footer {
+  margin-top: 2rem;
+}
+
+.dashboard-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-height: 100vh;
+}
+
+.dashboard-main .navbar.is-fixed-top {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+
+.dashboard-main .footer {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
 .container.body {
   -webkit-box-shadow: 0px 0px 16px rgba(10, 10, 10, 0.2);
           box-shadow: 0px 0px 16px rgba(10, 10, 10, 0.2);
@@ -26927,49 +27062,6 @@ body > .navbar {
 
 .column .tag {
   margin-top: .5rem;
-}
-
-.hero .hero-body .container.has-text-centered .title, .hero .hero-body .container.has-text-centered .subtitle, .hero .hero-body .container .title, .hero .hero-body .container .subtitle {
-  color: #fff !important;
-}
-
-.hero.is-kynno {
-  background-color: #800080;
-}
-
-.hero.is-kynno-gradient {
-  background: linear-gradient(75deg, #800080, #2d2dff);
-  background-size: 400% 400%;
-  -webkit-animation: fade 14s ease infinite;
-  animation: fade 14s ease infinite;
-}
-
-@-webkit-keyframes fade {
-  0% {
-    background-position: 0% 4%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 4%;
-  }
-}
-
-@keyframes fade {
-  0% {
-    background-position: 0% 4%;
-  }
-  50% {
-    background-position: 100% 100%;
-  }
-  100% {
-    background-position: 0% 4%;
-  }
-}
-
-.hero.is-kynno-gradient .box:not(:last-child), .hero.is-kynno-gradient .content:not(:last-child), .hero.is-kynno-gradient .notification:not(:last-child), .hero.is-kynno-gradient .progress:not(:last-child), .hero.is-kynno-gradient .table:not(:last-child), .hero.is-kynno-gradient .table-container:not(:last-child), .hero.is-kynno-gradient .title:not(:last-child), .hero.is-kynno-gradient .subtitle:not(:last-child), .hero.is-kynno-gradient .block:not(:last-child), .hero.is-kynno-gradient .highlight:not(:last-child), .hero.is-kynno-gradient .breadcrumb:not(:last-child), .hero.is-kynno-gradient .level:not(:last-child), .hero.is-kynno-gradient .list:not(:last-child), .hero.is-kynno-gradient .message:not(:last-child), .hero.is-kynno-gradient .pagination:not(:last-child), .hero.is-kynno-gradient .tabs:not(:last-child) {
-  margin: 0px;
 }
 
 .has-text-centered, .container.has-text-centered {
@@ -27094,7 +27186,90 @@ section.main {
 }
 
 .pageloader.is-kynno-gradient {
-  background: linear-gradient(75deg, #800080, #2d2dff) !important;
+  background: linear-gradient(75deg, #800080, #3498db) !important;
   background-size: 400% 400%;
+}
+
+html.has-navbar-fixed-top,
+body.has-navbar-fixed-top {
+  padding-top: 3.77rem;
+}
+
+.dashboard-panel.is-side {
+  background-color: #343c3d;
+}
+
+.dashboard-panel.is-full-height {
+  height: 100vh;
+}
+
+.container.is-post .columns .date {
+  text-align: right;
+}
+
+.container.is-post .columns .title {
+  text-align: left;
+}
+
+.container.is-post .subtitle {
+  margin-top: 30px;
+  font-size: 16px;
+}
+
+.columns .column.text-white {
+  color: #fff !important;
+}
+
+.button.is-blue {
+  background-color: #2d2dff;
+  border-color: #2d2dff;
+}
+
+.button.is-blue:hover {
+  background-color: #4747ff;
+  border-color: #4747ff;
+}
+
+.hero .hero-body .container.has-text-centered .title, .hero .hero-body .container.has-text-centered .subtitle, .hero .hero-body .container .title, .hero .hero-body .container .subtitle {
+  color: #fff !important;
+}
+
+.hero.is-kynno {
+  background-color: #800080;
+}
+
+.hero.is-kynno-gradient {
+  background: linear-gradient(75deg, #800080, #2d2dff);
+  background-size: 400% 400%;
+  -webkit-animation: fade 14s ease infinite;
+  animation: fade 14s ease infinite;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    background-position: 0% 4%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 4%;
+  }
+}
+
+@keyframes fade {
+  0% {
+    background-position: 0% 4%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 4%;
+  }
+}
+
+.hero.is-kynno-gradient .box:not(:last-child), .hero.is-kynno-gradient .content:not(:last-child), .hero.is-kynno-gradient .notification:not(:last-child), .hero.is-kynno-gradient .progress:not(:last-child), .hero.is-kynno-gradient .table:not(:last-child), .hero.is-kynno-gradient .table-container:not(:last-child), .hero.is-kynno-gradient .title:not(:last-child), .hero.is-kynno-gradient .subtitle:not(:last-child), .hero.is-kynno-gradient .block:not(:last-child), .hero.is-kynno-gradient .highlight:not(:last-child), .hero.is-kynno-gradient .breadcrumb:not(:last-child), .hero.is-kynno-gradient .level:not(:last-child), .hero.is-kynno-gradient .list:not(:last-child), .hero.is-kynno-gradient .message:not(:last-child), .hero.is-kynno-gradient .pagination:not(:last-child), .hero.is-kynno-gradient .tabs:not(:last-child) {
+  margin: 0px;
 }
 /*# sourceMappingURL=framework.css.map */
