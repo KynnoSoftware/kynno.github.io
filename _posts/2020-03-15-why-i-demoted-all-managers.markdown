@@ -29,6 +29,7 @@ Lets start off with the former co-owner - <b>Squeezy</b>. Squeezy was a valued m
 Even before all of this, Squeezy had went behind my back on numerous occassions. Taking to mocking us on other Discord servers as well as collaborating with raiders. When he left, he left due to "poor quality-control". Which is his phrasing for "I only cared about my role".
 
 <br>
+<hr>
 <br>
 Now, lets discuss <b>Ram</b>. Ram was also a valued member of the community -- excluding the fact that the community never knew about how he also collaborated with raiders. Even hijacking a server I had owned, in the name of "restoring" it. Not only that, he had continued to grow more negativity towards us. Tyler and I decided he should've been demoted ages ago, he was demoted for the following reasons:
 
@@ -47,9 +48,11 @@ Now, lets discuss <b>Ram</b>. Ram was also a valued member of the community -- e
 </div>
 
 <br>
+<hr>
 <br>
 <b>Pikey</b> was only demoted due to inactivity. He has been given a chance to be more active via the administrator role.
 <br>
+<hr>
 <br>
 
 (Note, I only demoted them. They left on their own accord. We are not responsible for kicking, banning or "firing them".)
